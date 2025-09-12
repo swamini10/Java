@@ -9,7 +9,7 @@ public class Demo {
 //	            return a;
 //	        }
 //	        return a.substring(1) + a.charAt(0);
-	    	//we use for loop Also
+//          we use for loop Also
 	    	for(int i=0;i<a.length();i++) {
 				return a.substring(1)+a.charAt(0);
 	    	}	
