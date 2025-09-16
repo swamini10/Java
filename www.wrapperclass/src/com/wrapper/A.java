@@ -39,6 +39,8 @@ public class A {
 	 int num =Integer.parseInt(str);
 	 System.out.println(num);*/
 	 
+	 
+	 
 	 // wapper > string
 	 Integer num3=3894;
 	 String  num4=num3.toString();
