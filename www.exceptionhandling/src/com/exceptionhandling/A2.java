@@ -13,4 +13,4 @@ public class A2 {
 	}
 
 }
-// it is an ArithmeticException it handle by using try catch block
+// it is an Arithmetic Exception it handle by using try catch block
