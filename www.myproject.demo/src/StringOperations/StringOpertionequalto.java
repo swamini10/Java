@@ -1,4 +1,4 @@
-package Com.StringOperations;
+package StringOperations;
 
 public class StringOpertionequalto {
 	public static void main(String[] args) {

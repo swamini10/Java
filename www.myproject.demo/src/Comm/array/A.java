@@ -1,4 +1,4 @@
-package com.array;
+package Comm.array;
 
 public class A {
 	public static void main(String[] args) {

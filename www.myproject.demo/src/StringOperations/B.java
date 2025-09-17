@@ -1,4 +1,4 @@
-package Com.StringOperations;
+package StringOperations;
 
 public class B {
 	public static void main(String[] args) {

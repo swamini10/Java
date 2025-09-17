@@ -1,4 +1,4 @@
-package com.array;
+package Comm.array;
 
 public class Data {
 	public static int findRollNumber(int []rollNos,int rollNO) {
