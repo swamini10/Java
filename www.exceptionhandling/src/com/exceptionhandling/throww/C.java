@@ -1,5 +1,6 @@
 package com.exceptionhandling.throww;
 import java.util.*;
+import com.exceptionhandling.custom.AgeNotvalidException;
 public class C {
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
@@ -10,7 +11,7 @@ public class C {
 		if (age>18) {
 			System.out.println("votter register.....");
 		}else {
-			throw new ArithmeticException();
+			throw new AgeNotvalidException();
 		}
 	}
 
