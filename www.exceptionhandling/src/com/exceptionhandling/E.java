@@ -16,7 +16,9 @@ public class E {
 	}
  }
 }
+
 // this is String Index Out Of Bounds Exception
+
 /* this exception handle by 
  catch(String Index Out Of Bounds Exception e)
  catch(Index Out Of Bounds Exception e)

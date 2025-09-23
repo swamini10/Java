@@ -19,7 +19,7 @@ public class demo {
 
 /*
  * in single try we can create multiple catch block
-here in  exception handling suppose we handle arithmetic exception we cannot use first parent class of 
+here =in  exception handling suppose we handle arithmetic exception we cannot use first parent class of 
 arithmetic exception  we need to use first child class then use parent class 
 */
 
