@@ -8,3 +8,4 @@ public class illnessException extends RuntimeException {
 }
 // this is complire time excption 
 // we convert it into RuntimeException by extends the class
+
