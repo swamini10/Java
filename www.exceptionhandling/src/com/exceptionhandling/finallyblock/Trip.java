@@ -15,3 +15,7 @@ public class Trip {
 	}
 }
 }
+
+
+//After try block is use directly catch block
+//finally block run anyway if exception is occurs or not this block execute

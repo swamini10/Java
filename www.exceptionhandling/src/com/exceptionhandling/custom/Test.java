@@ -12,5 +12,9 @@ public class Test {
 		Test.getCollege();
 	}
 }
+//this exception is handle by exception and  CollegeNotFound
+
+
+
 // runtime exception is also called as unchecked 
 //compile time exception is also called as checked 
