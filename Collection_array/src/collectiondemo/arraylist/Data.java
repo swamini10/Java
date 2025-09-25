@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Data {
 	public static void main(String[] args) {
-		ArrayList StudentData =new ArrayList();//non NonGeneric
+		ArrayList StudentData =new ArrayList();// NonGeneric
 		StudentData.add(3463712);
 		StudentData.add("swamini");
 		StudentData.add(true);
