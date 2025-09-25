@@ -15,3 +15,4 @@ public class Result {
 	}
 
 }
+//Generic list
