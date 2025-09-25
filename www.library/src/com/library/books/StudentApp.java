@@ -1,5 +1,5 @@
 package com.library.books;
-
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class StudentApp {
@@ -12,6 +12,7 @@ public class StudentApp {
 		System.out.println("enter number");
 		Scanner  sc = new Scanner(System.in);
 		int ch=sc.nextInt();
+		try{
 		switch(ch) {
 		case 1:
 			stu.issueBook();
@@ -23,7 +24,12 @@ public class StudentApp {
 		case 3:
 			start=false;
 			break;
-		}	
+		}} catch (InputMismatchException e) {
+                System.out.println("⚠️ Invalid input! ");
+                sc.nextLine(); // clear invalid input
+            } catch (Exception e) {
+                System.out.println("⚠️ Unexpected error: " + e.getMessage());
+            }	
 		}
 	}
 

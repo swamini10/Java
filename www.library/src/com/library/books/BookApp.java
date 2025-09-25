@@ -1,7 +1,6 @@
 package com.library.books;
 
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class BookApp {
@@ -13,6 +12,7 @@ public class BookApp {
 		System.out.println("enter number");
 		Scanner  sc = new Scanner(System.in);
 		int ch=sc.nextInt();
+		 try {
 		switch(ch) {
 		case 1:
 			Op.setBook();
@@ -24,8 +24,13 @@ public class BookApp {
 			start=false;
 			break;
 		}	
-		}
-	}
+		} catch (InputMismatchException e) {
+                System.out.println("⚠️ Invalid input!");
+                sc.nextLine(); // clear invalid input
+            } catch (Exception e) {
+                System.out.println("⚠️ Unexpected error: " + e.getMessage());
+            }
+	}}
 
 }
 
