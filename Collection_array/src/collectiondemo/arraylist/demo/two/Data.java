@@ -43,5 +43,6 @@ System.out.println(data.lastIndexOf(999));
 //Returns last index of 999.
 
 	
+
 	}
 }
