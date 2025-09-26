@@ -4,7 +4,7 @@ import java.util.List;
 public class App {
 
 	public void setAllStudents() {
-	List<Student>students =new ArrayList();
+	List<Student>students =new ArrayList<>();
 	Student st=new Student();
 		st.setName("Ashish");
 		st.setRollNo(10);
