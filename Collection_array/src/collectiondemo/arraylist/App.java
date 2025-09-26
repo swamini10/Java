@@ -15,7 +15,9 @@ public class App {
 		st1.setRollNo(07);
 		st1.setCity("pune");
 		
-		System.out.println(students.add(st));
+		students.add(st1);
+		
+		System.out.println(students);
 		System.out.println(students.add(st1));
 
   }
