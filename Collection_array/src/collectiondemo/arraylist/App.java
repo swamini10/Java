@@ -1,16 +1,28 @@
 package collectiondemo.arraylist;
-
+import java.util.ArrayList;
+import java.util.List;
 public class App {
-	Student st=new Student();
+
 	public void setAllStudents() {
+	List<Student>students =new ArrayList();
+	Student st=new Student();
+		st.setName("Ashish");
+		st.setRollNo(10);
+		st.setCity("pune");
 		
-		st.name="Ashish";
-		st.rollNo=10;
-		st.city="pune";
-	}
-	public void getAllStudents() {
-		System.out.println(st.name);
-		System.out.println(st.rollNo);
-		System.out.println(st.city);
+		Student st1=new Student();
+		st1.setName("Sohan");
+		st1.setRollNo(07);
+		st1.setCity("pune");
+		
+		System.out.println(students.add(st));
+		System.out.println(students.add(st1));
+
+  }
+
+	public static void main(String[] args) {
+		
+		App app=new App();
+		app.setAllStudents();
 	}
 }
