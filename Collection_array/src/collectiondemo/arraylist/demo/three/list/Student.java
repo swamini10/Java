@@ -37,7 +37,12 @@ public class Student {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Student(int rollno2, String name2, String city2, long contact) {
-		// TODO Auto-generated constructor stub
+	
+	public Student(int rollno, String name, String city, long contact) {
+		super();
+		this.rollno = rollno;
+		this.name = name;
+		this.city = city;
+		this.contact = contact;
 	}
 }
