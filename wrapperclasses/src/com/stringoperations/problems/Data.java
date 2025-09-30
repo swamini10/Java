@@ -41,7 +41,23 @@ public class Data {
 		return total;
 	}
 	
-	public static int roman(String b);
+	public static int roman(String b){
+		int i;
+		int total=0;
+		int preValue=0;
+		
+		for(i=b.length()-1;i>=0;i--) {
+			char ch=b.charAt(i);
+			int value=0;
+			
+			if(ch=='I')value=1;
+			else if(ch=='V')value=5;
+			else if (ch=='X')value=10;
+			else if (ch=='L')value=50;
+			else if (ch=='C')value=100;
+			else if (ch=='D')value=500;
+			
+	}
 	
 	public static void main(String[] args) {
 //		String a="aShisH";
