@@ -24,6 +24,7 @@ public class App {
 					
 					
 			Student st =new Student(rollno,name,city,contact);
+			System.out.println(st);
 			student.add(st);
 			System.out.println("press 1 for add more");
 			if(1!=sc.nextInt()) {
@@ -42,5 +43,8 @@ public class App {
 			System.out.println(st.getContact());
 			
 		}
+	}
+	public void getByUsingListIterator() {
+		
 	}
 }
