@@ -11,6 +11,38 @@ public class BillingService {
 	Scanner sc=new Scanner(System.in);
 	private int productId;
 	private double quantity;
+	private Customer customer;
+
+	// Show all products purchased by a customer and print total bill
+	public void showCustomerPurchases(int customerId) {
+		boolean found = false;
+		for (Customer customer : CustomerOperations.allCustomers) {
+			if (customer.getCusId() == customerId) {
+				found = true;
+				System.out.println("Customer Name: " + customer.getName());
+				System.out.println("Customer City: " + customer.getCity());
+				double totalBill = 0;
+				List<ProductBill> bills = new ArrayList<>();
+				// Assuming Bill objects are stored in a list for each customer
+				for (Bill bill : Bill.getAllBills()) {
+					if (bill.getCustomerName().equals(customer.getName())) {
+						totalBill += bill.getTotalBill();
+						// If Bill contains product details, print them
+						if (bill.getProductBills() != null) {
+							for (ProductBill pb : bill.getProductBills()) {
+								System.out.println("Product: " + pb.getProductName() + ", Quantity: " + pb.getQuantity() + ", Price: " + pb.getProductBill());
+							}
+						}
+					}
+				}
+				System.out.println("Total Bill: " + totalBill);
+				break;
+			}
+		}
+		if (!found) {
+			System.out.println("Customer not found");
+		}
+	}
 public void makeBill() {
 	System.out.println("*");
 	System.out.println("Enter customer Id");
@@ -20,10 +52,11 @@ public void makeBill() {
 	Iterator<Customer>itr=allcustomers.iterator();
 	List<Customer>cm=new LinkedList<>();
 	boolean customerFound=false;
+	boolean addMoreProduct =true;
 	while(itr.hasNext()) {
 		Customer customer=itr.next();
 		if(customer.getCusId()==custId) {
-			boolean addMoreProduct =true;
+			
 
 			List<ProductBill>pb=new ArrayList<ProductBill>();
 			while(addMoreProduct) {
@@ -49,24 +82,27 @@ public void makeBill() {
 		productBill.setQuantity((int) quantity);
 		productBill.setProductBill(price);
 		pb.add(productBill);
-		}
-	
+		}	
 	System.out.println("enter 1 for add more :");
 	if (1!=(sc.nextInt())) {
-		boolean addMoreProducts = false;
+		addMoreProduct = false;
 	
-	  double totalBill=0;
+		double totalBill=0;
 	  Iterator<ProductBill> iterator =pb.iterator();
 	  while(iterator.hasNext()) {
 		  ProductBill productBill =iterator.next();
 		  totalBill=(int)(totalBill+productBill.getProductBill());
 	  }
+	  Bill bi= new Bill();
+	  bi.setCustomerName(customer.getName());
+	  bi.setTotalBill(totalBill);
+	  bi.setTotalBill(totalBill);
+	  
 	  customerFound=true;
 	}
- }
-   
-	  
+ }	  
 	if(!customerFound) {
 		System.out.println("Customer not found");
 	}
-}}
+}
+}

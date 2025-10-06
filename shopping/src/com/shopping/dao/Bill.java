@@ -1,13 +1,29 @@
+
 package com.shopping.dao;
 
 public class Bill {
-	private int customerName;
+	private String customerName;
 	private double totalBill;
 	private long invoiceNo;
-	public int getCustomerName() {
+	private java.util.List<ProductBill> productBills;
+	// Static list to store all bills
+	private static java.util.List<Bill> allBills = new java.util.ArrayList<>();
+	public static java.util.List<Bill> getAllBills() {
+		return allBills;
+	}
+	public static void addBill(Bill bill) {
+		allBills.add(bill);
+	}
+	public java.util.List<ProductBill> getProductBills() {
+		return productBills;
+	}
+	public void setProductBills(java.util.List<ProductBill> productBills) {
+		this.productBills = productBills;
+	}
+	public String getCustomerName() {
 		return customerName;
 	}
-	public void setCustomerName(int customerName) {
+	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
 	public double getTotalBill() {
@@ -26,15 +42,16 @@ public class Bill {
 	public String toString() {
 		return "Bill [customerName=" + customerName + ", totalBill=" + totalBill + ", invoiceNo=" + invoiceNo + "]";
 	}
-	public Bill(int customerName, double totalBill, long invoiceNo) {
+	public Bill(String customerName, double totalBill, long invoiceNo) {
 		super();
 		this.customerName = customerName;
 		this.totalBill = totalBill;
 		this.invoiceNo = invoiceNo;
+		this.productBills = new java.util.ArrayList<>();
 	}
 	public Bill() {
 		super();
-		// TODO Auto-generated constructor stub
+		this.productBills = new java.util.ArrayList<>();
 	}
 	
 

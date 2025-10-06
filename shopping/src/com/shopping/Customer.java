@@ -10,7 +10,7 @@ public int getCusId() {
 public void setCusId(int cusId) {
 	this.cusId = cusId;
 }
-public String getName() {
+public  String getName() {
 	return name;
 }
 public void setName(String name) {
