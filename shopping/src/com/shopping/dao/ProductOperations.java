@@ -10,7 +10,7 @@ import com.shopping.Product;
 
 
 public class ProductOperations {
-	List<Product>allProducts=new ArrayList<Product>();
+	public static List<Product>allProducts=new ArrayList<Product>();
 	public void setProducts() {
 		Boolean addMore=true;
 		Scanner sc=new Scanner(System.in);
