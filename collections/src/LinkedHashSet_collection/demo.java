@@ -20,6 +20,7 @@ public class demo {
 	}
 
 }
+//LinkedHashMap
 //insertion order preserved
 //duplicates are not allow
 //null value can be inserted only once
