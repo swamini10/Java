@@ -1,0 +1,51 @@
+LinkedHashSet:
+online store
+No duplicates — if a user views the same product again, it should not appear twice.
+Order of viewing — you want to display in order from oldest to newest (or maybe newest first, depending on UI).
+Fast lookup / insertion / removal — you need to quickly check if this item was already viewed and update the list.
+
+
+ArrayDeque:
+movie theater
+People arriving late might want to go to the back of the line.
+VIP guests might be allowed to join at the front.
+If someone leaves (in a hurry), they might leave from front or back.
+At any time, you want to see who is at the front or back.
+
+
+HashSet:
+instagram username 
+whatsapp
+You don’t want duplicates — each tag should appear only once.
+You don’t care about the order of tags.
+
+
+treeset 
+surname of student
+
+
+array 
+student marks
+contact list
+book in lab
+
+
+linkedlist
+music playlist
+browser
+
+Stack
+editing software
+Browser “Back” navigation history
+ Backtracking in puzzles
+ Stack of plates
+ books on table 
+ 
+ 
+ Queue
+ daily task
+ cust queue
+ traffic of vehicles
+ 
+ 
+ 
