@@ -23,4 +23,4 @@ public class HashSetDemo {
 //hash value 
 // duplicates are not allow
 // null value can be inserted only once
-// insertion is not 
+//insertion order is not preserved 
