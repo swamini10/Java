@@ -11,3 +11,6 @@ names.add("gayu");
 System.out.println(names);
 	}
 }
+//alpha order
+// Duplicate not allow
+//null not allow 
