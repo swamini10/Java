@@ -12,4 +12,6 @@ public class Demo{
 				System.out.println(values);
 			}
 }
-//
+//incres order
+//Duplicate not allow
+//null not allow 
