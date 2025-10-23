@@ -1,0 +1,23 @@
+<div>string is a collection of characters and also string is a class</div>
+<div>string is immutable..i.e changes cannot be done in the string once created</div>
+example String a="Soham"
+<div>since string is a class we can create an object of string</div>
+example String b=new String ("SBPCOE")
+<div>also string could be created...first creating an array then calling the same array using an object</div>
+example char [] c= {'a','p','p','l','e'}
+<div></div>
+<div>difference between .equals() & == is</div>
+<div>.equals() function checks the content of the two string to be compared</div>
+<div>whereas the == checks the memory location of two string in scp </div>
+example   String a ="Swamini";
+          String b="Swamini";
+          String c=new String ("Swamini");
+          String e="Bhandare";
+          String f=new String("Bhandare");
+          System.out.println(a==b);
+      		System.out.println(a.equals(b));//this both will return same output as boths content and memory location is same in scp
+      		System.out.println(a==c);
+      		System.out.println(a.equals(c));//this both will return different o/p as memory loaction is different yet content are same
+	
+<div></div>
+<div></div>
